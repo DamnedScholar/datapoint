@@ -1,0 +1,16 @@
+<template>
+    <require from="./home.css"></require>
+    <section class="top-panel">
+        <article class="viewscreen"></article>
+        <article class="info">Text goes here. It should be positioned towards the middle.</article>
+    </section>
+    <dragula-and-drop drop-fn.call="drop(item, target, source, sibling, itemVM, siblingVM)"></dragula-and-drop>
+    <section class="bottom-panel drag-source drop-target ui cards">
+        <article class="card datapoint" repeat.for="datapoint of points">
+            <compose view-model="point" view.bind="point.html"
+            model.bind="{ target : datapoint }" ></compose>
+        </article>
+    </section>
+
+    <button type="button" class="ui button">Save</button>
+</template>

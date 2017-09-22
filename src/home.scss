@@ -1,0 +1,31 @@
+$primary-color: #fff;
+$accent-color: #5f9ea0;
+$viewscreen: #222;
+
+.top-panel {
+  background-color: $accent-color;
+  height: 250px;
+
+  .viewscreen {
+    background: $viewscreen;
+    float: left;
+    height: 100%;
+    width: 400px;
+  }
+
+  .info {
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.bottom-panel {
+  background-color: $primary-color;
+
+  .card.datapoint {
+    width: 120px;
+    height: 90px;
+    text-align: center;
+  }
+}

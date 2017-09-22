@@ -1,0 +1,3 @@
+# Slideshow
+
+* There are lots of cool plugins for Bespoke. https://www.npmjs.com/browse/keyword/bespoke-plugin
